@@ -1,1 +1,5 @@
-# ANN-Model-
+This project focuses on building a deep learning-based diagnostic tool for the binary classification of bone fractures using X-ray images. An Artificial Neural Network (ANN) with a funnel-shaped architecture was developed and trained on a dataset of 9,463 preprocessed grayscale X-rays. Each image was flattened into a 1D vector and normalized to enhance learning performance.
+
+The model was implemented in PyTorch and trained using Binary Cross-Entropy loss with Stochastic Gradient Descent (SGD). To improve accuracy and robustness, extensive hyperparameter tuning was done using Optuna, an automated optimization library. This led to a test accuracy of 99.15%, along with strong evaluation metrics like precision, recall, specificity, and AUC (0.9996).
+
+This ANN model is lightweight, efficient, and highly accurate, making it suitable for use in preliminary clinical screening to support radiologists in fracture detection. It demonstrates that with appropriate preprocessing and tuning, ANNs can be a powerful alternative to CNNs for medical image analysis where resources are limited.
